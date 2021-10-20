@@ -7,8 +7,16 @@ from django.shortcuts import HttpResponse
 def holaDjango(request):
     return HttpResponse("Hola Django!")
 
-def holaPepe(request):
-    return HttpResponse("Hola Pepe!")
+def pepe(request):
+    return HttpResponse('Hola Pepe!')
 
 def holaTu(request, nombre):
     return HttpResponse(f"Hola {nombre.capitaliza()}!")
+
+def holaPepe(request):
+    return render(request, 'principal/index.html')
+
+def indiceParam(request, nombre):
+    return render(request, 'principal/saludo.html', {
+        'nombre': nombre.capitalize()
+    })
