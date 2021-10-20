@@ -7,7 +7,7 @@ from django.shortcuts import HttpResponse
 def holaDjango(request):
     return HttpResponse("Hola Django!")
 
-def holaDjango(request):
+def holaPepe(request):
     return HttpResponse("Hola Pepe!")
 
 def holaTu(request, nombre):
