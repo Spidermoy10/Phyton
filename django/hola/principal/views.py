@@ -6,3 +6,6 @@ from django.shortcuts import HttpResponse
 
 def holaDjango(request):
     return HttpResponse("Hola Django!")
+
+def holaDjango(request):
+    return HttpResponse("Hola Pepe!")
