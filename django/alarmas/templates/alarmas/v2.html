@@ -1,0 +1,11 @@
+{% extends "alarmas/layout.html" %}
+{% block body %}
+
+    
+        <h1>Nueva alarma</h1>
+        <form>
+            <input type="text" name="alarma"></input>
+            <input type="submit">
+        </form>
+        <a href="{% url 'dia:index' %}">Ver alarmas</a>
+{% endblock %}       

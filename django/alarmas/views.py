@@ -1,12 +1,11 @@
 from django.shortcuts import render
-from django import forms
 
 alarmas = ['5:30', '5:35', '5:40', '5:50']
 
 # Create your views here.
-
 def index(request):
     return render(request, 'alarmas/index.html', {'alarmas':alarmas})
 
-class FNuevaAlarma(forms.Form):
-    alarma = forms.CharField(label='nueva_alarma')
+
+def v2(request):
+    return render(request, 'alarmas/v2.html')
