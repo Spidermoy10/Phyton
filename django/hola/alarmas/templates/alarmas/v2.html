@@ -5,8 +5,12 @@
     <form action="{% url 'alarmas:index'%}" method="post">
         {% csrf_token %}
         {{ cont_form}}
-        <input type="text" name="alarma">
-        <input type="submit">
+       
+        <label for="id_alarma">Nueva alarma:</label>
+        <input type="text" name="alarma" required id="id_alarma">
+        <label for="number" name="snooze" min="0" max="10" required id="id_snooze"> ==$0
+        
+            <input type="submit">
     </form>
     <a href="{% url 'alarmas:index'%}">Ver alarmas</a>
 {% endblock %}

@@ -9,4 +9,6 @@ def index(request):
     return render(request, 'alarmas/index.html', {'alarmas':alarmas})
 
 class FNuevaAlarma(forms.Form):
-    alarma = forms.CharField(label='nueva_alarma')
+    alarma = forms.CharField(label='nueva alarma')
+
+    snooze=forms.IntegerField(label="repetir",min_value=0,max_value=10)
